@@ -14,9 +14,9 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start":"run-p start:dev start:api",
-    "start:api":"node tools/apiServer.js",
-    "prestart:api":"node tools/createMockDb.js",
+    "start": "run-p start:dev start:api",
+    "start:api": "node tools/apiServer.js",
+    "prestart:api": "node tools/createMockDb.js",
     "start:dev": "cross-env REACT_APP_API_URL=http://localhost:3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
