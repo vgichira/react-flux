@@ -12,10 +12,10 @@ function Courses() {
   }, []);
 
   return (
-    <>
+    <div className="container-fluid">
       <h1>Courses</h1>
-	  <CourseList courses={courses}/>
-    </>
+      <CourseList courses={courses} />
+    </div>
   );
 }
 

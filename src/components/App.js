@@ -3,15 +3,22 @@ import HomePage from "./Homepage";
 import About from "./About";
 import Header from "./common/Header";
 import Courses from "./Courses";
-import { Route } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
+import NotFound from "./NotFound";
+import ManageCourse from "./ManageCourse";
 
 function App() {
   return (
     <div>
       <Header />
-      <Route path="/" exact component={HomePage} />
-      <Route path="/about" component={About} />
-      <Route path="/courses" component={Courses} />
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/about" component={About} />
+        <Route path="/courses" component={Courses} />
+        <Route path="/course/:slug" component={ManageCourse} />
+        <Redirect from="/about-us" to="/about" />
+        <Route component={NotFound} />
+      </Switch>
     </div>
   );
 }

@@ -1,15 +1,28 @@
-import React from 'react'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Header() {
-    return (
-        <div className='container-fluid'>
-            <nav>
-                <a href="/">Home</a> | {}
-                <a href="/about">About</a> | {}
-                <a href="/courses">Courses</a>
-            </nav>
-        </div>
-    )
+  const activeStyle = {
+    color: "orange",
+  };
+
+  return (
+    <div className="container-fluid">
+      <nav>
+        <NavLink activeStyle={activeStyle} exact to="/">
+          Home
+        </NavLink>{" "}
+        {" | "}
+        <NavLink activeStyle={activeStyle} to="/about">
+          About
+        </NavLink>
+        {" | "}
+        <NavLink activeStyle={activeStyle} to="/courses">
+          Courses
+        </NavLink>
+      </nav>
+    </div>
+  );
 }
 
-export default Header
+export default Header;
