@@ -3,26 +3,15 @@ import HomePage from "./Homepage";
 import About from "./About";
 import Header from "./common/Header";
 import Courses from "./Courses";
+import { Route } from "react-router-dom";
 
 function App() {
-  function getPath() {
-    const route = window.location.pathname;
-
-    if (route === "/about") {
-      return <About />;
-    }
-
-    if (route === "/courses") {
-      return <Courses />;
-    }
-
-    return <HomePage />;
-  }
-
   return (
     <div>
       <Header />
-      {getPath()}{" "}
+      <Route path="/" exact component={HomePage} />
+      <Route path="/about" component={About} />
+      <Route path="/courses" component={Courses} />
     </div>
   );
 }
