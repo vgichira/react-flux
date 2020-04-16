@@ -11,7 +11,7 @@ function Header() {
       <nav>
         <NavLink activeStyle={activeStyle} exact to="/">
           Home
-        </NavLink>{" "}
+        </NavLink>
         {" | "}
         <NavLink activeStyle={activeStyle} to="/about">
           About

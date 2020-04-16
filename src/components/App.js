@@ -1,7 +1,7 @@
 import React from "react";
 import HomePage from "./Homepage";
 import About from "./About";
-import Header from "./common/Header";
+import Header from "./reusable/Header";
 import Courses from "./Courses";
 import { Route, Switch, Redirect } from "react-router-dom";
 import NotFound from "./NotFound";
