@@ -12,6 +12,7 @@ function CourseForm(props) {
         label="Title"
         onChange={props.onChange}
         placeholder="Enter Title"
+        error={props.errors.title}
         value={title}
       />
 
@@ -29,11 +30,15 @@ function CourseForm(props) {
             <option value="1">Cory House</option>
             <option value="2">Scott Allen</option>
           </select>
+          {props.errors.author && (
+            <div className="alert alert-danger">{props.errors.author}</div>
+          )}
         </div>
       </div>
 
       <TextInput
         id="category"
+        error={props.errors.category}
         name="category"
         onChange={props.onChange}
         placeholder="Enter Category"
@@ -41,7 +46,7 @@ function CourseForm(props) {
         value={category}
       />
 
-      <input className="btn btn-success" value="Add Course" type="submit" />
+      <input className="btn btn-success" value="Save" type="submit" />
     </form>
   );
 }
