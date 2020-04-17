@@ -6,6 +6,7 @@ import Courses from "./Courses";
 import { Route, Switch, Redirect } from "react-router-dom";
 import NotFound from "./NotFound";
 import ManageCourse from "./ManageCourse";
+import NewCourse from "./NewCourse";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/courses" component={Courses} />
         <Route path="/course/:slug" component={ManageCourse} />
+        <Route path="/course" component={NewCourse} />
         <Redirect from="/about-us" to="/about" />
         <Route component={NotFound} />
       </Switch>
