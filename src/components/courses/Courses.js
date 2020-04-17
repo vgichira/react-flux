@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getCourses, deleteCourse } from "../api/courseApi";
+import { getCourses, deleteCourse } from "../../api/courseApi";
 import CourseList from "./CourseList";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";

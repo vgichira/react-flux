@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CourseForm from "./CourseForm";
-import * as courseApi from "../api/courseApi";
+import * as courseApi from "../../api/courseApi";
 import { toast } from "react-toastify";
 
 function ManageCourse(props) {

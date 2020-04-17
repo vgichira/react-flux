@@ -1,12 +1,14 @@
 import React from "react";
-import HomePage from "./Homepage";
-import About from "./About";
+import HomePage from "./home/Homepage";
+import About from "./about/About";
 import Header from "./reusable/Header";
-import Courses from "./Courses";
-import { Route, Switch, Redirect } from "react-router-dom";
-import NotFound from "./NotFound";
-import ManageCourse from "./ManageCourse";
-import NewCourse from "./NewCourse";
+import Courses from "./courses/Courses";
+import { Route, Switch } from "react-router-dom";
+import NotFound from "./404/NotFound";
+import ManageCourse from "./courses/ManageCourse";
+import NewCourse from "./courses/NewCourse";
+import Authors from "./authors/Authors";
+import NewAuthor from "./authors/NewAuthor";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -21,7 +23,8 @@ function App() {
         <Route path="/courses" component={Courses} />
         <Route path="/course/:slug" component={ManageCourse} />
         <Route path="/course" component={NewCourse} />
-        <Redirect from="/about-us" to="/about" />
+        <Route path="/authors" component={Authors} />
+        <Route path="/author/new" component={NewAuthor} />
         <Route component={NotFound} />
       </Switch>
     </div>

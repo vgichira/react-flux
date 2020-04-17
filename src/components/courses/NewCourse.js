@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import TextInput from "./reusable/TextInput";
-import * as courseApi from "../api/courseApi";
+import TextInput from "../reusable/TextInput";
+import * as courseApi from "../../api/courseApi";
 import { toast } from "react-toastify";
 
 function NewCourse(props) {

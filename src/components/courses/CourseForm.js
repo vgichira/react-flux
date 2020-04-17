@@ -1,5 +1,5 @@
 import React from "react";
-import TextInput from "./reusable/TextInput";
+import TextInput from "../reusable/TextInput";
 
 function CourseForm(props) {
   const { title, authorId, category } = props.course;
