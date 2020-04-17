@@ -20,7 +20,7 @@ function ManageCourse(props) {
   const handleChange = (event) => {
     const updatedCourse = {
       ...course,
-      [event.target.name]: event.target.id,
+      [event.target.name]: event.target.value,
     };
     setCourse(updatedCourse);
   };
