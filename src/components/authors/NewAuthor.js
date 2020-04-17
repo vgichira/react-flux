@@ -8,6 +8,7 @@ function NewAuthor(props) {
     id: null,
     name: "",
   });
+
   const [errors, setErrors] = useState({});
 
   function handleChange(event) {

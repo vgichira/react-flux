@@ -15,7 +15,11 @@ function Authors() {
   return (
     <div className="container-fluid">
       <h2>Authors</h2>
-        <Link className="btn btn-primary" to="/author/new">New Author</Link><br/><br/>
+      <Link className="btn btn-primary" to="/author/new">
+        New Author
+      </Link>
+      <br />
+      <br />
       <AuthorList authors={authors} />
     </div>
   );

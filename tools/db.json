@@ -74,13 +74,20 @@
   "authors": [
     {
       "id": 1,
-      "name": "Vincent Muchiri",
-      "createdAt": 1587116621587
+      "name": "Cory House"
     },
     {
       "id": 2,
-      "name": "Vincent Gichira",
-      "createdAt": 1587116723064
+      "name": "Scott Allen"
+    },
+    {
+      "id": 3,
+      "name": "Dan Wahlin"
+    },
+    {
+      "id": 4,
+      "name": "Vincent Muchiri",
+      "createdAt": 1587117170368
     }
   ]
 }
