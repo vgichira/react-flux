@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function AuthorList(props) {
   return (
@@ -7,6 +8,8 @@ function AuthorList(props) {
         return (
           <li className="list-group-item" key={author.id}>
             {author.name}
+
+            <Link className="float-right btn btn-sm btn-danger" id={author.id} onClick={props.onDelete} to="">Remove</Link>
           </li>
         );
       })}
