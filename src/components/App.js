@@ -21,7 +21,7 @@ function App() {
         <Route path="/" exact component={HomePage} />
         <Route path="/about" component={About} />
         <Route path="/courses" component={Courses} />
-        <Route path="/course/:slug" component={ManageCourse} />
+        <Route path="/course/:slug/edit" component={ManageCourse} />
         <Route path="/course" component={NewCourse} />
         <Route path="/authors" component={Authors} />
         <Route path="/author/new" component={NewAuthor} />
